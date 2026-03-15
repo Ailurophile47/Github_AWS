@@ -6,10 +6,11 @@ import os
 
 # -------- CONFIG -------- #
 
-S3_BUCKET = "github-data-lake-raw-harsh"   # change if needed
-AWS_REGION = "ap-south-1"
+S3_BUCKET = "  "   # your input bucket address
 
-GITHUB_API = "https://api.github.com/search/repositories?q=stars:>50000&sort=stars&order=desc"
+AWS_REGION = " " # your AWS ergion here
+
+GITHUB_API = " " # github api, although publicly  available,  can be used as per the limit.
 
 now = datetime.utcnow()
 
