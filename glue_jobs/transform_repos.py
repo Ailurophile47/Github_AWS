@@ -24,7 +24,7 @@ job.init(args['JOB_NAME'], args)
 # Read Raw JSON from S3
 # -----------------------------------
 
-raw_path = "s3://github-data-lake-raw-harsh/repos/"
+raw_path = "" # your raw path here
 
 raw_dyf = glueContext.create_dynamic_frame.from_options(
     connection_type="s3",
@@ -80,7 +80,7 @@ transformed_dyf = DynamicFrame.fromDF(df_transformed, glueContext, "transformed_
 # Write Parquet Output to S3
 # -----------------------------------
 
-output_path = "s3://github-data-lake-processed-harsh/repos/"
+output_path = "" # your output path here
 
 glueContext.write_dynamic_frame.from_options(
     frame=transformed_dyf,
