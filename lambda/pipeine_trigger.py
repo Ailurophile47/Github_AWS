@@ -7,7 +7,7 @@ athena = boto3.client("athena")
 
 GLUE_JOB_NAME = "github_etl_job"
 ATHENA_DATABASE = "github_analytics_db"
-ATHENA_OUTPUT = "s3://github-data-lake-processed-harsh/query-results/"
+ATHENA_OUTPUT = " " # s3 output address here
 
 # Analytics queries
 QUERIES = [
